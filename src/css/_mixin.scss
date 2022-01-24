@@ -1,0 +1,41 @@
+@mixin reset($font) {
+  font-family: $font;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+
+@mixin hide {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+@mixin border($px, $style, $color, $radius) {
+  border: $px $style $color;
+  border-radius: $radius;
+}
+
+@mixin basic($width, $height, $margin, $padding) {
+  width: $width;
+  height: $height;
+  margin: $margin;
+  padding: $padding;
+}
+
+@mixin font($size, $weight, $color) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin back_img($url, $size, $repeat, $positionX, $positionY) {
+  background-image: url($url);
+  background-size: $size;
+  background-repeat: $repeat;
+  background-position: $positionX $positionY;
+}
