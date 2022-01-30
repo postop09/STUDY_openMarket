@@ -1,11 +1,14 @@
+@charset "utf-8";
+
 @import 'mixin';
 @import 'openMarket';
+@import 'login';
 
 * {
   @include reset(null)
 }
 
-.hide_txt {
+.txt_hide {
   @include hide
 }
 

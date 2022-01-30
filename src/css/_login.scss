@@ -1,0 +1,79 @@
+// Style
+.main_login {
+  @include basic(550px,'',auto,'');
+  .img_logo {
+    display: block;
+    margin: 100px auto 140px;
+  }
+  .txt_tab {
+    border: 1px solid #c4c4c4;
+    border-bottom: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 275px;
+    height: 61px;
+    padding: 20px;
+    font-size: $font-l;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+  }
+  .list_login {
+    position: relative;
+    .btn_customer {
+      position: absolute;
+      top: -60px;
+      left: 0;
+      z-index: 100;
+    }
+    .btn_seller {
+      position: absolute;
+      top: -60px;
+      right: 0;
+      background-color: $color-back;
+      z-index: -10;
+    }
+  }
+  .inp_id,
+  .inp_pw {
+    border: none;
+    border-bottom: 1px solid #C4C4C4;
+    width: 480px;
+    height: 60px;
+  }
+  .inp_pw {
+    margin: 6px 0 36px;
+  }
+  .btn_login {
+    border: none;
+    border-radius: 5px;
+    width: 480px;
+    height: 60px;
+    @include font($font-l,'',white);
+    background-color: $color-main;
+  }
+  .list_new {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    a {
+      padding: 0 14px;
+    }
+    .item_new {
+      border-right: 2px solid $color-sub;
+    }
+  }
+}
+.sec_customer {
+  display: block;
+  background-color: white;
+  .form_customer {
+    @include border(1px, solid, #C4C4C4, 10px);
+    border-top-left-radius: 0px;
+    padding: 34px 35px;
+    z-index: 50;
+  }
+}
+.sec_seller {
+  display: none;
+}
