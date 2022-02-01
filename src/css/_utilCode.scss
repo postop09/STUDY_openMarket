@@ -1,0 +1,9 @@
+@charset "utf-8";
+@import 'mixin';
+
+* {
+  @include reset(null)
+}
+.txt_hide {
+  @include hide
+}

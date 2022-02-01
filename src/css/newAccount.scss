@@ -1,4 +1,7 @@
-// Style
+@import 'utilCode';
+@import 'mixin';
+@import 'openMarket';
+
 .main_login {
   @include basic(550px,'',auto,'');
   .img_logo {
@@ -34,16 +37,19 @@
       background-color: $color-back;
     }
   }
-  .inp_id,
-  .inp_pw {
-    border: none;
-    border-bottom: 1px solid $color-non;
+  label {
+    color: $color-sub;
+  }
+  input {
+    border: 1px solid $color-non;
+    border-radius: 5px;
     width: 480px;
-    height: 60px;
+    height: 54px;
+    margin: 10px 0 12px;
     padding-left: 5px;
   }
-  .inp_pw {
-    margin: 6px 0 36px;
+  .inp_rePw {
+    margin-bottom: 50px;
   }
   .btn_login {
     border: none;
@@ -51,7 +57,7 @@
     width: 480px;
     height: 60px;
     @include font($font-l, bold, white);
-    background-color: $color-main;
+    background-color: $color-non;
     cursor: pointer;
   }
   .list_new {

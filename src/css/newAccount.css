@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+
+.txt_hide {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+.main_login {
+  width: 550px;
+  height: "";
+  margin: auto;
+  padding: "";
+}
+
+.main_login .img_logo {
+  display: block;
+  margin: 100px auto 140px;
+}
+
+.main_login .txt_tab {
+  border: 1px solid #C4C4C4;
+  border-bottom: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 275px;
+  padding: 20px;
+  font-size: 18px;
+  text-align: center;
+  background-color: white;
+  cursor: pointer;
+}
+
+.main_login .list_login {
+  position: relative;
+}
+
+.main_login .list_login .btn_customer {
+  position: absolute;
+  top: -60px;
+  left: 0;
+  height: 61px;
+  background-color: white;
+}
+
+.main_login .list_login .btn_seller {
+  position: absolute;
+  top: -60px;
+  right: 0;
+  height: 60px;
+  background-color: #F2F2F2;
+}
+
+.main_login label {
+  color: #767676;
+}
+
+.main_login input {
+  border: 1px solid #C4C4C4;
+  border-radius: 5px;
+  width: 480px;
+  height: 54px;
+  margin: 10px 0 12px;
+  padding-left: 5px;
+}
+
+.main_login .inp_rePw {
+  margin-bottom: 50px;
+}
+
+.main_login .btn_login {
+  border: none;
+  border-radius: 5px;
+  width: 480px;
+  height: 60px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: #C4C4C4;
+  cursor: pointer;
+}
+
+.main_login .list_new {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+}
+
+.main_login .list_new li {
+  padding: 0 14px;
+}
+
+.main_login .list_new .item_new {
+  border-right: 2px solid #C4C4C4;
+}
+
+.sec_customer {
+  display: block;
+  background-color: white;
+}
+
+.sec_customer .form_customer {
+  border: 1px solid #C4C4C4;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  padding: 34px 35px;
+}
+
+.sec_seller {
+  display: none;
+}
+/*# sourceMappingURL=newAccount.css.map */

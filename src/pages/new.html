@@ -5,8 +5,46 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HODU Market | 회원가입</title>
+  <link rel="stylesheet" href="../css/newAccount.css">
 </head>
 <body>
-  
+  <main class="main_login">
+    <h1><img src="../img/Logo-hodu-b.png" alt="호두마켓 회원가입" class="img_logo"></h1>
+    <ul class="list_login">
+      <li><button type="button" class="txt_tab btn_customer">구매회원가입</button></li>
+      <li><button type="button" class="txt_tab btn_seller">판매회원가입</button></li>
+    </ul>
+    <section class="sec_customer">
+      <div class="wrap_customer">
+        <h2 class="txt_hide">구매회원 회원가입</h2>
+        <form action="POST" class="form_customer">
+          <label for="inp_id" class="label_id">아이디</label>
+          <input type="text" name="" id="inp_id" class="inp_id">
+          <label for="inp_pw" class="label_pw">비밀번호</label>
+          <input type="password" name="" id="inp_pw" class="inp_pw">
+          <label for="inp_rePw" class="label_rePw">비밀번호 재확인</label>
+          <input type="password" name="" id="inp_rePw" class="inp_rePw">
+          <!-- Error text -->
+          <div class="txt_error"></div>
+          <label for="inp_name" class="label_name">이름</label>
+          <input type="password" name="" id="inp_name" class="inp_name">
+          <div>
+            <p>휴대폰번호</p>
+            <ul>
+              <li>010</li>
+              <li>011</li>
+              <li>016</li>
+              <li>017</li>
+              <li>018</li>
+              <li>019</li>
+            </ul>
+            <input type="text" name="" id="">
+            <input type="text" name="" id="">
+          </div>
+      </div>
+        <button type="submit" class="btn_login">가입하기</button>
+      </form>
+    </section>
+  </main>
 </body>
 </html>

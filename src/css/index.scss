@@ -1,16 +1,8 @@
-@charset "utf-8";
-
+@import 'utilCode';
 @import 'mixin';
 @import 'openMarket';
 @import 'login';
 
-* {
-  @include reset(null)
-}
-
-.txt_hide {
-  @include hide
-}
 
 .nav_top {
   display: flex;
