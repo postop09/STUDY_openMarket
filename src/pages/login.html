@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HODU Market | 로그인</title>
+  <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+  <main class="main_login">
+    <h1><img src="../img/Logo-hodu-b.png" alt="호두마켓 로그인" class="img_logo"></h1>
+    <ul class="list_login">
+      <li><button type="button" class="txt_tab btn_customer">구매회원 로그인</button></li>
+      <li><button type="button" class="txt_tab btn_seller">판매회원 로그인</button></li>
+    </ul>
+    <section class="sec_customer">
+      <h2 class="txt_hide">구매회원 로그인</h2>
+      <form action="POST" class="form_customer">
+        <label for="inp_id" class="txt_hide">아이디를 입력해주세요</label>
+        <input type="text" name="" placeholder="아이디" id="inp_id" class="inp_id">
+        <label for="inp_pw" class="txt_hide">비밀번호를 입력해주세요</label>
+        <input type="password" name="" placeholder="비밀번호" id="inp_pw" class="inp_pw">
+        <div class="txt_error"></div>
+        <button type="submit" class="btn_login">로그인</button>
+      </form>
+    </section>
+    <section class="sec_seller">
+      <h2 class="txt_hide">판매회원 로그인</h2>
+      <form action="POST" class="form_seller">
+        <label for="inp_id" class="txt_hide">아이디를 입력해주세요</label>
+        <input type="text" name="" placeholder="아이디" id="inp_id" class="inp_id">
+        <label for="inp_pw" class="txt_hide">비밀번호를 입력해주세요</label>
+        <input type="password" name="" placeholder="비밀번호" id="inp_pw" class="inp_pw">
+        <!-- Error text -->
+        <div class="txt_error"></div>
+        <button type="submit" class="btn_login">로그인</button>
+      </form>
+    </section>
+    <ul class="list_new">
+      <li class="item_new"><a href="">회원가입</a></li>
+      <li><a href="">비밀번호 찾기</a></li>
+    </ul>
+  </main>
+</body>
+</html>

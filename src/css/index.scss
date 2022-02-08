@@ -1,13 +1,8 @@
+@import 'utilCode';
 @import 'mixin';
 @import 'openMarket';
+@import 'login';
 
-* {
-  @include reset(null)
-}
-
-.hide_txt {
-  @include hide
-}
 
 .nav_top {
   display: flex;
