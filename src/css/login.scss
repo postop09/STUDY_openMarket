@@ -1,0 +1,81 @@
+@import 'utilCode';
+@import 'openMarket';
+
+.wrap_login {
+  margin: auto;
+  max-width: 550px;
+  .img_hodu {
+    display: block;
+    margin: 100px auto 70px;
+  }
+  .list_loginType {
+    display: flex;
+    button {
+      border: 1px solid $color-lightgray;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      width: 275px;
+      height: 60px;
+      font-size: $font-l;
+      font-weight: 700;
+      background-color: $color-back;
+      cursor: pointer;
+    }
+    .on {
+      border-bottom: none;
+      background-color: white;
+    }
+  }
+  .sec_login {
+    border: 1px solid $color-lightgray;
+    border-top: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    form {
+      padding: 34px 35px 36px;
+    }
+    input {
+      border: none;
+      border-bottom: 1px solid $color-lightgray;
+      width: 480px;
+      height: 60px;
+    }
+    button {
+      border: none;
+      border-radius: 5px;
+      width: 480px;
+      height: 60px;
+      margin-top: 36px;
+      font-size: $font-l;
+      font-weight: 700;
+      color: white;
+      background-color: $color-main;
+      cursor: pointer;
+    }
+  }
+  .sec_seller {
+    display: none;
+  }
+  .list_new {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    li {
+      position: relative;
+      padding: 0 14px;
+    }
+    li:first-child::after {
+      content: '';
+      display: block;
+      width: 3px;
+      height: 15px;
+      position: absolute;
+      top: 4px;
+      right: 0;
+      background-color: $color-lightgray;
+    }
+    a {
+      color: #333333;
+    }
+  }
+}

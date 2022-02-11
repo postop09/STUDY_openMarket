@@ -5,46 +5,47 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>호두마켓 | 로그인</title>
+  <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
-  <main>
-    <h1>호두마켓 로그인 창</h1>
-    <img src="../img/Logo-hodu-b.png" alt="호두마켓 메인페이지로 이동">
-    <!-- type of login -->
-    <ul>
-      <li><button type="button">구매회원 로그인</button></li>
-      <li><button type="button">판매회원 로그인</button></li>
-    </ul>
-    <section>
-      <h2>구매회원 로그인 창</h2>
-      <form action="">
-        <label for=""></label>
-        <input type="text" placeholder="아이디">
-        <label for=""></label>
-        <input type="password" placeholder="비밀번호">
-        <div class="txt_err"></div>
-        <button type="submit">로그인</button>
-      </form>
-      <ul>
+  <main class="login_main">
+    <h1 class="txt_hide">호두마켓 로그인 창</h1>
+    <div class="wrap_login">
+      <img src="../img/Logo-hodu-b.png" alt="호두마켓 메인페이지로 이동" class="img_hodu">
+      <!-- type of login -->
+      <ul class="list_loginType">
+        <li><button type="button" class="on">구매회원 로그인</button></li>
+        <li><button type="button">판매회원 로그인</button></li>
+      </ul>
+      <section class="sec_login sec_customer">
+        <h2 class="txt_hide">구매회원 로그인 창</h2>
+        <form action="" class="form_customer">
+          <div class="wrap_as">
+            <label for="inp_customerId" class="txt_hide">아이디를 입력해주세요</label>
+            <input type="text" placeholder="아이디" id="inp_id">
+            <label for="inp_customerPw" class="txt_hide">비밀번호를 입역해주세요</label>
+            <input type="password" placeholder="비밀번호" id="inp_pw">
+            <div class="txt_err"></div>
+            <button type="submit">로그인</button>
+          </div>
+        </form>
+      </section>
+      <section class="sec_login sec_seller">
+        <h2 class="txt_hide">판매회원 로그인 창</h2>
+        <form action="">
+          <label for=""></label>
+          <input type="text" placeholder="아이디">
+          <label for=""></label>
+          <input type="password" placeholder="비밀번호">
+          <div class="txt_err"></div>
+          <button type="submit">로그인</button>
+        </form>
+      </section>
+      <ul class="list_new">
         <li><a href="">회원가입</a></li>
         <li><a href="">비밀번호 찾기</a></li>
       </ul>
-    </section>
-    <section>
-      <h2>판매회원 로그인 창</h2>
-      <form action="">
-        <label for=""></label>
-        <input type="text" placeholder="아이디">
-        <label for=""></label>
-        <input type="password" placeholder="비밀번호">
-        <div class="txt_err"></div>
-        <button type="submit">로그인</button>
-      </form>
-      <ul>
-        <li><a href="">회원가입</a></li>
-        <li><a href="">비밀번호 찾기</a></li>
-      </ul>
-    </section>
+    </div>
   </main>
 </body>
 </html>

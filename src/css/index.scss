@@ -111,7 +111,7 @@
 .sec_products {
   margin: 80px auto 0;
   padding-bottom: 180px;
-  width: 1280px;
+  max-width: 1280px;
   .list_product {
     display: flex;
     .item_product {
@@ -171,7 +171,7 @@
 }
 .wrap_footer {
   margin: auto;
-  width: 1280px;
+  max-width: 1280px;
   .wrap_list {
     display: flex;
     justify-content: space-between;
