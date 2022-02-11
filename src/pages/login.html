@@ -11,7 +11,7 @@
   <main class="login_main">
     <h1 class="txt_hide">호두마켓 로그인 창</h1>
     <div class="wrap_login">
-      <img src="../img/Logo-hodu-b.png" alt="호두마켓 메인페이지로 이동" class="img_hodu">
+      <a href=""><img src="../img/Logo-hodu-b.png" alt="호두마켓 메인페이지로 이동" class="img_hodu"></a>
       <!-- type of login -->
       <ul class="list_loginType">
         <li><button type="button" class="on">구매회원 로그인</button></li>
@@ -20,24 +20,22 @@
       <section class="sec_login sec_customer">
         <h2 class="txt_hide">구매회원 로그인 창</h2>
         <form action="" class="form_customer">
-          <div class="wrap_as">
-            <label for="inp_customerId" class="txt_hide">아이디를 입력해주세요</label>
-            <input type="text" placeholder="아이디" id="inp_id">
-            <label for="inp_customerPw" class="txt_hide">비밀번호를 입역해주세요</label>
-            <input type="password" placeholder="비밀번호" id="inp_pw">
-            <div class="txt_err"></div>
-            <button type="submit">로그인</button>
-          </div>
+          <label for="inp_customerId" class="txt_hide">아이디를 입력해주세요</label>
+          <input type="text" placeholder="아이디" id="inp_customerId">
+          <label for="inp_customerPw" class="txt_hide">비밀번호를 입역해주세요</label>
+          <input type="password" placeholder="비밀번호" id="inp_customerPw">
+          <div class="txt_err">아이디 또는 비밀번호가 일치하지 않습니다.</div>
+          <button type="submit">로그인</button>
         </form>
       </section>
       <section class="sec_login sec_seller">
         <h2 class="txt_hide">판매회원 로그인 창</h2>
         <form action="">
-          <label for=""></label>
-          <input type="text" placeholder="아이디">
-          <label for=""></label>
-          <input type="password" placeholder="비밀번호">
-          <div class="txt_err"></div>
+          <label for="inp_sellerId" class="txt_hide">아이디를 입력해주세요</label>
+          <input type="text" placeholder="아이디" id="inp_sellerId">
+          <label for="inp_sellerPw" class="txt_hide">비밀번호를 입역해주세요</label>
+          <input type="password" placeholder="비밀번호" id="inp_sellerPw">
+          <div class="txt_err">아이디 또는 비밀번호가 일치하지 않습니다.</div>
           <button type="submit">로그인</button>
         </form>
       </section>

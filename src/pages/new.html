@@ -5,129 +5,166 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>호두마켓 | 회원가입</title>
+  <link rel="stylesheet" href="../css/new.css">
 </head>
 <body>
   <main>
-    <h1>호두마켓 회원가입 창</h1>
-    <img src="../img/Logo-hodu-b.png" alt="호두마켓 메인페이지로 이동">
-    <!-- type of new -->
-    <ul>
-      <li><button type="button">구매회원가입</button></li>
-      <li><button type="button">판매회원가입</button></li>
-    </ul>
-    <section>
-      <h2>구매회원가입 창</h2>
-        <form action="">
-          <label>아이디
-            <input type="text">
-          </label>
-          <div class="txt_err"></div>
-          <label>비밀번호
-            <input type="password">
-          </label>
-          <label>비밀번호 재확인
-            <input type="password">
-          </label>
-          <div class="txt_err"></div>
-          <label>이름
-            <input type="text">
-          </label>
-          <p>휴대폰 번호</p>
-          <div>
-            <ul>
-              <li>010</li>
-              <li>011</li>
-              <li>016</li>
-              <li>017</li>
-              <li>018</li>
-            </ul>
-            <!-- <select name="" id="">
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
-            </select> -->
-            <label for=""></label>
-            <input type="number" name="" id="">
-            <label for=""></label>
-            <input type="number" name="" id="">
-            <label for=""></label>
-          </div>
-          <p>이메일</p>
-          <div>
-            <label for=""></label>
-            <input type="text" name="" id="">
-            <label for=""></label>
-            <input type="text" name="" id="">
-          </div>
-          <label>
-            <input type="checkbox" name="" id="">
-            호두샵의 <span>이용약관</span> 및 <span>개인정보처리방침</span>에 대한 내용을 확인하였고 동의합니다.
-          </label>
-          <button type="button">가입하기</button>
-        </form>
-    </section>
-    <section>
-      <h2>판매회원가입 창</h2>
-        <form action="">
-          <label>아이디
-            <input type="text">
-          </label>
-          <div class="txt_err"></div>
-          <label>비밀번호
-            <input type="password">
-          </label>
-          <label>비밀번호 재확인
-            <input type="password">
-          </label>
-          <div class="txt_err"></div>
-          <label>이름
-            <input type="text">
-          </label>
-          <p>휴대폰 번호</p>
-          <div>
-            <ul>
-              <li>010</li>
-              <li>011</li>
-              <li>016</li>
-              <li>017</li>
-              <li>018</li>
-            </ul>
-            <!-- <select name="" id="">
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
-            </select> -->
-            <label for=""></label>
-            <input type="number" name="" id="">
-            <label for=""></label>
-            <input type="number" name="" id="">
-            <label for=""></label>
-          </div>
-          <p>이메일</p>
-          <div>
-            <label for=""></label>
-            <input type="text" name="" id="">
-            <label for=""></label>
-            <input type="text" name="" id="">
-          </div>
-          <label>사업자 등록번호
-            <input type="text">
-          </label>
-          <button type="button">인증</button>
-          <label>스토어 이름
-            <input type="text">
-          </label>
-          <label>
-            <input type="checkbox" name="" id="">
-            호두샵의 <span>이용약관</span> 및 <span>개인정보처리방침</span>에 대한 내용을 확인하였고 동의합니다.
-          </label>
-          <button type="button">가입하기</button>
-        </form>
-    </section>
+    <h1 class="txt_hide">호두마켓 회원가입 창</h1>
+    <div class="wrap_new">
+      <a href=""><img src="../img/Logo-hodu-b.png" alt="호두마켓 메인페이지로 이동" class="img_hodu"></a>
+      <!-- type of new -->
+      <ul class="list_newType">
+        <li><button type="button" class="on">구매회원가입</button></li>
+        <li><button type="button">판매회원가입</button></li>
+      </ul>
+      <!-- 구매회원가입 창 -->
+      <section class="sec_new on">
+        <h2 class="txt_hide">구매회원가입 창</h2>
+          <form action="">
+            <div class="wrap_form">
+              <div class="wrap_id">
+                <label>아이디
+                  <input type="text" class="inp_id">
+                </label>
+                <button type="button" class="btn_id">중복확인</button>
+              </div>
+              <div class="txt_err"></div>
+              <label>비밀번호
+                <input type="password">
+              </label>
+              <label>비밀번호 재확인
+                <input type="password">
+              </label>
+              <div class="txt_err"></div>
+              <div class="wrap_myInfo">
+                <label>이름
+                  <input type="text">
+                </label>
+                <p>휴대폰 번호</p>
+                <div class="wrap_phone">
+                  <div class="wrap_front">
+                    <p>010</p>
+                    <button type="button" class="btn_front"><img src="../img/icon-down-arrow.png" alt="번호 목록 열고 닫기 버튼"></button>
+                    <ul class="list_phone">
+                      <li><button type="button">010</button></li>
+                      <li><button type="button">011</button></li>
+                      <li><button type="button">016</button></li>
+                      <li><button type="button">017</button></li>
+                      <li><button type="button">018</button></li>
+                    </ul>
+                  </div>
+                  <!-- <label for="inp_phone">휴대폰 번호</label>
+                  <select name="" id="inp_phone">
+                    <option value="">010</option>
+                    <option value="">011</option>
+                    <option value="">016</option>
+                    <option value="">017</option>
+                    <option value="">018</option>
+                  </select> -->
+                  <label for="inp_mid" class="txt_hide">휴대폰 중간 자리</label>
+                  <input type="text" name="" maxlength="4" id="inp_mid">
+                  <label for="inp_last" class="txt_hide">휴대폰 끝 자리</label>
+                  <input type="text" name="" maxlength="4" id="inp_last">
+                </div>
+                <p>이메일</p>
+                <div class="wrap_email">
+                  <label for=""></label>
+                  <input type="text" name="" id="">
+                  <span>@</span>
+                  <label for=""></label>
+                  <input type="text" name="" id="">
+                </div>
+              </div>
+            </div>
+            <div class="wrap_rule">
+              <label>
+                <input type="checkbox">
+                호두샵의 <button>이용약관</button> 및 <button>개인정보처리방침</button>에 대한 내용을 확인하였고 동의합니다.
+              </label>
+              <button type="submit" class="btn_join">가입하기</button>
+            </div>
+          </form>
+      </section>
+      <!-- 판매회원가입 창 -->
+      <section class="sec_new">
+        <h2 class="txt_hide">판매회원가입 창</h2>
+          <form action="">
+            <div class="wrap_form">
+              <div class="wrap_id">
+                <label>아이디
+                  <input type="text" class="inp_id">
+                </label>
+                <button type="button" class="btn_id">중복확인</button>
+              </div>
+              <div class="txt_err"></div>
+              <label>비밀번호
+                <input type="password">
+              </label>
+              <label>비밀번호 재확인
+                <input type="password">
+              </label>
+              <div class="txt_err"></div>
+              <div class="wrap_myInfo">
+                <label>이름
+                  <input type="text">
+                </label>
+                <p>휴대폰 번호</p>
+                <div class="wrap_phone">
+                  <div class="wrap_front">
+                    <p>010</p>
+                    <button type="button" class="btn_front"><img src="../img/icon-down-arrow.png" alt="번호 목록 열고 닫기 버튼"></button>
+                    <ul class="list_phone">
+                      <li><button type="button">010</button></li>
+                      <li><button type="button">011</button></li>
+                      <li><button type="button">016</button></li>
+                      <li><button type="button">017</button></li>
+                      <li><button type="button">018</button></li>
+                    </ul>
+                  </div>
+                  <!-- <label for="inp_phone">휴대폰 번호</label>
+                  <select name="" id="inp_phone">
+                    <option value="">010</option>
+                    <option value="">011</option>
+                    <option value="">016</option>
+                    <option value="">017</option>
+                    <option value="">018</option>
+                  </select> -->
+                  <label for="inp_mid" class="txt_hide">휴대폰 중간 자리</label>
+                  <input type="text" name="" maxlength="4" id="inp_mid">
+                  <label for="inp_last" class="txt_hide">휴대폰 끝 자리</label>
+                  <input type="text" name="" maxlength="4" id="inp_last">
+                </div>
+                <p>이메일</p>
+                <div class="wrap_email">
+                  <label for=""></label>
+                  <input type="text" name="" id="">
+                  <span>@</span>
+                  <label for=""></label>
+                  <input type="text" name="" id="">
+                </div>
+              </div>
+              <div class="wrap_storeInfo">
+                <div class="wrap_registNum">
+                  <label>사업자 등록번호
+                    <input type="text" class="inp_registNum">
+                  </label>
+                  <button type="button">인증</button>
+                </div>
+                <label>스토어 이름
+                  <input type="text">
+                </label>
+              </div>
+            </div>
+            <div class="wrap_rule">
+              <label>
+                <input type="checkbox">
+                호두샵의 <button>이용약관</button> 및 <button>개인정보처리방침</button>에 대한 내용을 확인하였고 동의합니다.
+              </label>
+              <button type="submit" class="btn_join">가입하기</button>
+            </div>
+          </form>
+      </section>
+    </div>
   </main>
 </body>
 </html>

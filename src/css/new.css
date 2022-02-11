@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+
+.txt_hide {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+.wrap_new {
+  margin: auto;
+  max-width: 550px;
+}
+
+.wrap_new .img_hodu {
+  display: block;
+  margin: 70px auto 70px;
+}
+
+.wrap_new .list_newType {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrap_new .list_newType button {
+  border: 1px solid #C4C4C4;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 275px;
+  height: 60px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #F2F2F2;
+  cursor: pointer;
+}
+
+.wrap_new .list_newType .on {
+  border-bottom: none;
+  background-color: white;
+}
+
+.sec_new.on {
+  display: block;
+}
+
+.sec_new {
+  display: none;
+}
+
+.wrap_form {
+  padding: 34px 35px 36px;
+  border: 1px solid #C4C4C4;
+  border-top: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.wrap_form .txt_err {
+  margin-bottom: 8px;
+  color: #EB5757;
+}
+
+.wrap_form label {
+  display: block;
+  margin-bottom: 12px;
+  color: #767676;
+}
+
+.wrap_form input {
+  display: block;
+  border: 1px solid #C4C4C4;
+  border-radius: 5px;
+  width: 480px;
+  height: 54px;
+  margin-top: 10px;
+  padding-left: 5px;
+}
+
+.wrap_form .wrap_id {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 12px;
+}
+
+.wrap_form .wrap_id label {
+  margin-bottom: 0;
+}
+
+.wrap_form .wrap_id .inp_id {
+  display: block;
+  width: 346px;
+}
+
+.wrap_form .wrap_id .btn_id {
+  border: none;
+  border-radius: 5px;
+  width: 122px;
+  height: 54px;
+  font-weight: 500;
+  color: white;
+  background-color: #21BF48;
+  cursor: pointer;
+}
+
+.wrap_form .wrap_myInfo {
+  margin-top: 50px;
+}
+
+.wrap_form .wrap_myInfo > p {
+  color: #767676;
+}
+
+.wrap_form .wrap_phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.wrap_form .wrap_phone .list_phone.on {
+  display: block;
+}
+
+.wrap_form .wrap_phone .list_phone {
+  display: none;
+  position: absolute;
+  top: 60px;
+  border: 1px solid #C4C4C4;
+  border-radius: 5px;
+  width: 152px;
+  height: 120px;
+  text-align: center;
+  overflow-y: scroll;
+}
+
+.wrap_form .wrap_phone .list_phone button {
+  display: block;
+  border: none;
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.wrap_form .wrap_phone .list_phone button:hover {
+  background-color: #F2F2F2;
+}
+
+.wrap_form .wrap_phone label {
+  margin-bottom: 0;
+}
+
+.wrap_form .wrap_phone input {
+  width: 152px;
+  padding-left: 0;
+  text-align: center;
+}
+
+.wrap_form .wrap_phone .wrap_front {
+  position: relative;
+}
+
+.wrap_form .wrap_phone .wrap_front p {
+  border: 1px solid #C4C4C4;
+  border-radius: 5px;
+  padding-left: 53px;
+  width: 152px;
+  height: 54px;
+  line-height: 52px;
+}
+
+.wrap_form .wrap_phone .wrap_front .btn_front {
+  position: absolute;
+  top: 16px;
+  right: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.wrap_form .wrap_email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrap_form .wrap_email span {
+  margin: 0 11px;
+}
+
+.wrap_rule {
+  padding: 0 35px;
+}
+
+.wrap_rule label {
+  display: block;
+  margin: 20px 0;
+}
+
+.wrap_rule label input {
+  cursor: pointer;
+}
+
+.wrap_rule label button {
+  border: none;
+  background: none;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.wrap_rule .btn_join.on {
+  background-color: #21BF48;
+}
+
+.wrap_rule .btn_join {
+  border: none;
+  border-radius: 5px;
+  width: 480px;
+  height: 60px;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  background-color: #C4C4C4;
+  cursor: pointer;
+}
+
+.wrap_storeInfo {
+  margin-top: 50px;
+}
+
+.wrap_storeInfo .wrap_registNum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 12px;
+}
+
+.wrap_storeInfo .wrap_registNum label {
+  margin-bottom: 0;
+}
+
+.wrap_storeInfo .wrap_registNum input {
+  width: 346px;
+}
+
+.wrap_storeInfo .wrap_registNum button {
+  border: none;
+  border-radius: 5px;
+  width: 122px;
+  height: 54px;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  background-color: #21BF48;
+  cursor: pointer;
+}
+/*# sourceMappingURL=new.css.map */

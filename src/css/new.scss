@@ -1,0 +1,216 @@
+@import 'utilCode';
+@import 'openMarket';
+
+.wrap_new {
+  margin: auto;
+  max-width: 550px;
+  .img_hodu {
+    display: block;
+    margin: 70px auto 70px;
+  }
+  .list_newType {
+    display: flex;
+    button {
+      border: 1px solid $color-lightgray;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      width: 275px;
+      height: 60px;
+      font-size: $font-l;
+      font-weight: 700;
+      background-color: $color-back;
+      cursor: pointer;
+    }
+    .on {
+      border-bottom: none;
+      background-color: white;
+    }
+  }
+} 
+// 구매/판매회원 창 구분
+.sec_new.on {
+  display: block;
+}
+.sec_new {
+  display: none;
+}
+.wrap_form {
+  padding: 34px 35px 36px;
+  border: 1px solid $color-lightgray;
+  border-top: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  .txt_err {
+    margin-bottom: 8px;
+    color: $color-red;
+  }
+  label {
+    display: block;
+    margin-bottom: 12px;
+    color: $color-darkgray;
+  }
+  input {
+    display: block;
+    border: 1px solid $color-lightgray;
+    border-radius: 5px;
+    width: 480px;
+    height: 54px;
+    margin-top: 10px;
+    padding-left: 5px;
+  }
+  .wrap_id {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 12px;
+    label {
+      margin-bottom: 0;
+    }
+    .inp_id {
+      display: block;
+      width: 346px;
+    }
+    .btn_id {
+      border: none;
+      border-radius: 5px;
+      width: 122px;
+      height: 54px;
+      font-weight: 500;
+      color: white;
+      background-color: $color-main;
+      cursor: pointer;
+    }
+  }
+  .wrap_myInfo {
+    margin-top: 50px;
+    > p {
+      color: $color-darkgray;
+    }
+  }
+  .wrap_phone {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+    margin-bottom: 12px;
+    .list_phone.on {
+      display: block;
+    }
+    .list_phone {
+      display: none;
+      position: absolute;
+      top: 60px;
+      border: 1px solid $color-lightgray;
+      border-radius: 5px;
+      width: 152px;
+      height: 120px;
+      text-align: center;
+      overflow-y: scroll;
+      button {
+        display: block;
+        border: none;
+        width: 100%;
+        height: 40px;
+        font-size: $font-m;
+        background-color: white;
+        cursor: pointer;
+        &:hover {
+          background-color: $color-back;
+        }
+      }
+    }
+    label {
+      margin-bottom: 0;
+    }
+    input {
+      width: 152px;
+      padding-left: 0;
+      text-align: center;
+    }
+    .wrap_front {
+      position: relative;
+      p {
+        border: 1px solid $color-lightgray;
+        border-radius: 5px;
+        padding-left: 53px;
+        width: 152px;
+        height: 54px;
+        line-height: 52px;
+      }
+      .btn_front {
+        position: absolute;
+        top: 16px;
+        right: 10px;
+        border: none;
+        background: none;
+        cursor: pointer;
+      }
+    }
+  }
+  .wrap_email {
+    display: flex;
+    align-items: center;
+    span {
+      margin: 0 11px;
+    }
+  }
+}
+.wrap_rule {
+  padding: 0 35px;
+  label {
+    display: block;
+    margin: 20px 0;
+    input {
+      cursor: pointer;
+    }
+    button {
+      border: none;
+      background: none;
+      font-size: $font-m;
+      font-weight: 700;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+  .btn_join.on {
+    background-color: $color-main;
+  }
+  .btn_join {
+    border: none;
+    border-radius: 5px;
+    width: 480px;
+    height: 60px;
+    font-size: $font-l;
+    font-weight: 700;
+    color: white;
+    background-color: $color-lightgray;
+    cursor: pointer;
+  }
+}
+// 판매회원 창
+.wrap_storeInfo {
+  margin-top: 50px;
+  .wrap_registNum {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 12px;
+    label {
+      margin-bottom: 0;
+    }
+    input {
+      width: 346px;
+    }
+    button {
+      border: none;
+      border-radius: 5px;
+      width: 122px;
+      height: 54px;
+      font-size: $font-m;
+      font-weight: 700;
+      color: white;
+      background-color: $color-main;
+      cursor: pointer;
+    }
+  }
+}
