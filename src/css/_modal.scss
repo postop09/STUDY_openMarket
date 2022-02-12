@@ -1,0 +1,48 @@
+// MyPage & Logout
+.sec_modal.on {
+  display: flex;
+}
+.sec_modal {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid $color-lightgray;
+  width: 360px;
+  height: 200px;
+  background-color: white;
+  z-index: 50;
+  .list_btn {
+    display: flex;
+    margin-top: 30px;
+    li:first-child {
+      margin-right: 10px;
+    }
+  }
+  .btn_modal {
+    border: 1px solid $color-lightgray;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    color: $color-darkgray;
+    background: none;
+    cursor: pointer;
+  }
+  .btn_modal.on {
+    border: none;
+    color: white;
+    background-color: $color-main;
+  }
+  .btn_close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+}

@@ -1,62 +1,7 @@
 @import 'utilCode';
 @import 'openMarket';
+@import 'navAndFooter';
 
-// Navigation
-.index_header {
-  padding: 22px 0;
-}
-.list_nav {
-  display: flex;
-  justify-content: space-between;
-  margin: auto;
-  max-width: 1280px;
-  .wrap_navItem {
-    display: flex;
-    align-items: center;
-  }
-  .wrap_logo li:first-child,
-  .wrap_icon li:first-child {
-    margin-right: 30px;
-  }
-  .form_search {
-    display: flex;
-    width: 400px;
-    height: 46px;
-    .inp_search {
-      border: 1px solid $color-main;
-      border-top-left-radius: 50px;
-      border-bottom-left-radius: 50px;
-      border-right: none;
-      padding-left: 10px;
-      width: calc(100% - 32px);
-    }
-    .btn_search {
-      border: 1px solid $color-main;
-      border-top-right-radius: 50px;
-      border-bottom-right-radius: 50px;
-      border-left: none;
-      padding: 0 15px 0 5px;
-      background: none;
-      cursor: pointer;
-    }
-    .btn_search:hover {
-      background-color: #21bf4931;
-    }
-  }
-  .wrap_icon {
-    a {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      font-size: 12px;
-      color: $color-darkgray;
-    }
-    .img_icon {
-      width: 32px;
-      height: 32px;
-    }
-  }
-}
 // Slide
 .sec_slide {
   position: relative;
@@ -137,7 +82,7 @@
   }
 }
 // MyPage & Logout
-.modal_logout {
+.sec_modal {
   position: absolute;
   top: 85px;
   right: 30px;
@@ -147,7 +92,7 @@
   width: 130px;
   height: 108px;
   background-color: white;
-  .btn_log {
+  .btn_modal {
     border: none;
     border-radius: 5px;
     width: 100%;
@@ -156,50 +101,11 @@
     background: none;
     cursor: pointer;
   }
-  .btn_log:hover {
+  .btn_modal:hover {
     border: 1px solid black;
     color: black;
   }
   .btn_myPage {
     margin-bottom: 8px;
-  }
-}
-// Footer
-.index_footer {
-  padding-bottom: 66px;
-  background-color: $color-back;
-}
-.wrap_footer {
-  margin: auto;
-  max-width: 1280px;
-  .wrap_list {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    border-bottom: 1px solid $color-lightgray;
-    margin-bottom: 30px;
-    padding: 54px 0 22px;
-    ul {
-      display: flex;
-    }
-    .list_rules {
-      li:not(li:last-child) {
-        border-right: 1px solid black;
-      }
-      a {
-        margin: 0 14px;
-        font-size: $font-s;
-      }
-    }
-    .list_sns {
-      column-gap: 14px;
-    }
-  }
-  .txt_gray {
-    display: block;
-    margin-bottom: 5px;
-    font-style: normal;
-    font-size: $font-s;
-    color: $color-darkgray;
   }
 }
