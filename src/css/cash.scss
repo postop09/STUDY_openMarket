@@ -1,0 +1,54 @@
+@import 'utilCode';
+@import 'openMarket';
+@import 'navAndFooter';
+@import 'modal';
+
+.cash_main {
+  width: 1280px;
+  margin: auto;
+}
+.wrap_cash {
+  margin: 54px 0 96px;
+  text-align: center;
+  h2 {
+    margin-bottom: 52px;
+  }
+  .list_info {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    width: 1280px;
+    margin: 0 auto 16px;
+    padding: 18px 82px 18px 261px;
+    background-color: $color-back;
+    li {
+      font-size: $font-l;
+    }
+    li:nth-child(2) {
+      margin-left: 360px;
+    }
+    li:nth-child(3) {
+      margin: 0 171px 0 188px;
+    }
+  }
+  .item_product {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $color-lightgray;
+    padding: 8px 0 18px 8px;
+    p:nth-child(3) {
+      margin-left: 400px;
+    }
+    p:nth-child(4) {
+      margin: 0 173px 0 203px;
+    }
+    .img_product {
+      width: 104px;
+      height: 104px;
+      margin-right: 36px;
+    }
+    .txt_product {
+      display: block;
+    }
+  }
+}

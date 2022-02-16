@@ -5,64 +5,84 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>호두마켓 | 주문/결제하기</title>
+  <link rel="stylesheet" href="../css/cash.css">
 </head>
 <body>
-  <header>
-    <h1>주문/결제 페이지</h1>
+  <header class="index_header">
+    <h1 class="txt_hide">제품 상세보기 페이지</h1>
     <nav>
-      <ul>
-        <li>
-          <a href="">
-            <img src="../img/Logo-hodu.png" alt="호두마켓 메인으로 가기">
-          </a>
-        </li>
-        <li>
-          <form action="">
-            <label for=""></label>
-            <input type="search" placeholder="상품을 검색해보세요!">
-            <button type="submit"></button>
-          </form>
-        </li>
-        <li>
-          <a href="">
-            <img src="../img/icon-shopping-cart.png" alt="">
-            장바구니
-          </a>
-        </li>
-        <li>
-          <a href="">
+      <ul class="list_nav">
+        <div class="wrap_navItem wrap_logo">
+          <li>
+            <a href="">
+              <img src="../img/Logo-hodu.png" alt="호두마켓">
+            </a>
+          </li>
+          <li>
+            <form action="" class="form_search">
+              <label for="inp_search" class="txt_hide">검색창</label>
+              <input type="search" placeholder="상품을 검색해보세요!" id="inp_search" class="inp_search">
+              <button type="submit" class="btn_search"><img src="../img/search.png" alt=""></button>
+            </form>
+          </li>
+        </div>
+        <div class="wrap_navItem wrap_icon">
+          <li>
+            <a href="">
+              <img src="../img/icon-shopping-cart.png" alt="" class="img_icon">
+              장바구니
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="../img/icon-user.png" alt="" class="img_icon">
+              로그인 <!-- 구매회원 로그인한 상태라면 '마이페이지' -->
+            </a>
+          </li>
+        </div>
+        <!-- 판매회원 로그인 -->
+        <!-- <div>
+          <li>
             <img src="../img/icon-user.png" alt="">
-            로그인
-          </a>
-        </li>
+            마이페이지
+          </li>
+          <li>
+            <a href="">
+              <img src="" alt="">
+              판매자 센터
+            </a>
+          </li>
+        </div> -->
       </ul>
     </nav>
   </header>
-  <main>
-    <h2>주문/결제하기</h2>
-    <ul>
-      <li>상품정보</li>
-      <li>할인</li>
-      <li>배송비</li>
-      <li>주문금액</li>
-    </ul>
-    <ul>
-      <li>
-        <img src="../img/img.png" alt="">
-        <p>
-          <small>백엔드글로벌</small>
-          <strong>딥러닝 개발자 무릎 담요</strong>
-          <small>수량 : <span>1</span>개</small>
-        </p>
-        <p>-</p>
-        <p>무료배송</p>
-        <p>17,500원</p>
-      </li>
-    </ul>
-    <dl>
-      <dt>총 주문금액</dt>
-      <dd>46,500<span>원</span></dd>
-    </dl>
+  <main class="cash_main">
+    <div class="wrap_cash">
+      <h2>주문/결제하기</h2>
+      <ul class="list_info">
+        <li>상품정보</li>
+        <li>할인</li>
+        <li>배송비</li>
+        <li>주문금액</li>
+      </ul>
+      <ul class="list_item">
+        <li class="item_product">
+          <img src="../img/img.png" alt="" class="img_product">
+          <p class="txt_productInfo">
+            <small class="txt_product">백엔드글로벌</small>
+            <strong class="txt_product">딥러닝 개발자 무릎 담요</strong>
+            <small class="txt_product">수량 : <span>1</span>개</small>
+          </p>
+          <p>-</p>
+          <p>무료배송</p>
+          <p>17,500원</p>
+        </li>
+      </ul>
+      <dl>
+        <dt>총 주문금액</dt>
+        <dd>46,500<span>원</span></dd>
+      </dl>
+    </div>
     <section>
       <h3>배송정보</h3>
       <article>
@@ -79,18 +99,18 @@
             <div>
               <dt>휴대폰</dt>
               <dd>
-                <label for="">휴대폰 번호 앞자리</label>
+                <label for="" class="txt_hide">휴대폰 번호 앞자리</label>
                 <input type="text">
-                <label for="">휴대폰 번호 중간자리</label>
+                <label for="" class="txt_hide">휴대폰 번호 중간자리</label>
                 <input type="text">
-                <label for="">휴대폰 번호 끝자리</label>
+                <label for="" class="txt_hide">휴대폰 번호 끝자리</label>
                 <input type="text">
               </dd>
             </div>
             <div>
               <dt>이메일</dt>
               <dd>
-                <label for="">이메일을 입력해주세요.</label>
+                <label for="" class="txt_hide">이메일을 입력해주세요.</label>
                 <input type="email">
               </dd>
             </div>
@@ -104,18 +124,18 @@
             <div>
               <dt>수령인</dt>
               <dd>
-                <label for="">이름을 입력해주세요.</label>
+                <label for="" class="txt_hide">이름을 입력해주세요.</label>
                 <input type="text">
               </dd>
             </div>
             <div>
               <dt>휴대폰</dt>
               <dd>
-                <label for="">휴대폰 번호 앞자리</label>
+                <label for="" class="txt_hide">휴대폰 번호 앞자리</label>
                 <input type="text">
-                <label for="">휴대폰 번호 중간자리</label>
+                <label for="" class="txt_hide">휴대폰 번호 중간자리</label>
                 <input type="text">
-                <label for="">휴대폰 번호 끝자리</label>
+                <label for="" class="txt_hide">휴대폰 번호 끝자리</label>
                 <input type="text">
               </dd>
             </div>
@@ -124,14 +144,14 @@
               <dd>
                 <input type="text" disabled>
                 <button type="button">우편번호 조회</button>
-                <label for="">상세 주소를 입력해주세요.</label>
+                <label for="" class="txt_hide">상세 주소를 입력해주세요.</label>
                 <input type="text" name="" id="">
               </dd>
             </div>
             <div>
               <dt>배송 메세지</dt>
               <dd>
-                <label for=""></label>
+                <label for="" class="txt_hide">배송 메세지를 작성해주세요.</label>
                 <input type="text">
               </dd>
             </div>
