@@ -60,43 +60,49 @@
     <div class="wrap_cash">
       <h2>주문/결제하기</h2>
       <ul class="list_info">
-        <li>상품정보</li>
-        <li>할인</li>
-        <li>배송비</li>
-        <li>주문금액</li>
+        <div>
+          <li>상품정보</li>
+        </div>
+        <div class="wrap_listR">
+          <li>할인</li>
+          <li>배송비</li>
+          <li>주문금액</li>
+        </div>
       </ul>
       <ul class="list_item">
         <li class="item_product">
           <img src="../img/img.png" alt="" class="img_product">
           <p class="txt_productInfo">
-            <small class="txt_product">백엔드글로벌</small>
-            <strong class="txt_product">딥러닝 개발자 무릎 담요</strong>
-            <small class="txt_product">수량 : <span>1</span>개</small>
+            <small>백엔드글로벌</small>
+            <strong>딥러닝 개발자 무릎 담요</strong>
+            <small>수량 : <span>1</span>개</small>
           </p>
-          <p>-</p>
-          <p>무료배송</p>
-          <p>17,500원</p>
+          <div class="wrap_listR">
+            <p>-</p>
+            <p class="txt_package">무료배송</p>
+            <p class="txt_product">17,500원</p>
+          </div>
         </li>
       </ul>
-      <dl>
+      <dl class="list_total">
         <dt>총 주문금액</dt>
-        <dd>46,500<span>원</span></dd>
+        <dd><span>46,500</span>원</dd>
       </dl>
     </div>
-    <section>
+    <section class="sec_packageInfo">
       <h3>배송정보</h3>
       <article>
         <h4>주문자 정보</h4>
         <form action="">
-          <dl>
-            <div>
+          <dl class="list_inp">
+            <div class="inp_layout">
               <dt>이름</dt>
               <dd>
-                <label for="">이름을 입력해주세요.</label>
+                <label for="" class="txt_hide">이름을 입력해주세요.</label>
                 <input type="text">
               </dd>
             </div>
-            <div>
+            <div class="inp_layout">
               <dt>휴대폰</dt>
               <dd>
                 <label for="" class="txt_hide">휴대폰 번호 앞자리</label>
@@ -107,7 +113,7 @@
                 <input type="text">
               </dd>
             </div>
-            <div>
+            <div class="inp_layout">
               <dt>이메일</dt>
               <dd>
                 <label for="" class="txt_hide">이메일을 입력해주세요.</label>
@@ -121,14 +127,14 @@
         <h4>배송지 정보</h4>
         <form action="">
           <dl>
-            <div>
+            <div class="inp_layout">
               <dt>수령인</dt>
               <dd>
                 <label for="" class="txt_hide">이름을 입력해주세요.</label>
                 <input type="text">
               </dd>
             </div>
-            <div>
+            <div class="inp_layout">
               <dt>휴대폰</dt>
               <dd>
                 <label for="" class="txt_hide">휴대폰 번호 앞자리</label>
@@ -140,7 +146,7 @@
               </dd>
             </div>
             <div>
-              <dt>배송주소</dt>
+              <dt class="inp_layout">배송주소</dt>
               <dd>
                 <input type="text" disabled>
                 <button type="button">우편번호 조회</button>
@@ -149,7 +155,7 @@
               </dd>
             </div>
             <div>
-              <dt>배송 메세지</dt>
+              <dt class="inp_layout">배송 메세지</dt>
               <dd>
                 <label for="" class="txt_hide">배송 메세지를 작성해주세요.</label>
                 <input type="text">

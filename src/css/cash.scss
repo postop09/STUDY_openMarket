@@ -15,40 +15,119 @@
   }
   .list_info {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     border-radius: 10px;
     width: 1280px;
     margin: 0 auto 16px;
-    padding: 18px 82px 18px 261px;
+    padding: 18px 0;
     background-color: $color-back;
     li {
       font-size: $font-l;
     }
-    li:nth-child(2) {
-      margin-left: 360px;
+    div {
+      width: 100%;
     }
-    li:nth-child(3) {
-      margin: 0 171px 0 188px;
+    .wrap_listR {
+      display: flex;
+      justify-content: space-between;
+      li:last-child {
+        margin-right: 82px;
+      }
     }
   }
   .item_product {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid $color-lightgray;
     padding: 8px 0 18px 8px;
-    p:nth-child(3) {
-      margin-left: 400px;
-    }
-    p:nth-child(4) {
-      margin: 0 173px 0 203px;
-    }
     .img_product {
       width: 104px;
       height: 104px;
       margin-right: 36px;
     }
-    .txt_product {
-      display: block;
+    .txt_productInfo {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-right: auto;
+      small {
+        font-size: $font-s;
+        color: $color-darkgray;
+      }
+      strong {
+        margin: 6px 0 10px 0;
+      }
+    }
+    .wrap_listR {
+      display: flex;
+      justify-content: space-between;
+      p {
+        font-size: $font-l;
+      }
+      .txt_package {
+        margin: 0 190px 0 203px;
+        color: $color-darkgray;
+      }
+      .txt_product {
+        font-weight: 700;
+        margin-right: 78px;
+      }
+    }
+  }
+  .list_total {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 30px 0 96px;
+    dt {
+      font-size: $font-l;
+    }
+    dd {
+      margin-left: 10px;
+      font-size: $font-xl;
+      font-weight: 700;
+      color: $color-red;
+      span {
+        color: $color-red;
+      }
+    }
+  }
+}
+.sec_packageInfo {
+  h3 {
+    border-bottom: 2px solid $color-lightgray;
+    margin-bottom: 40px;
+    padding-bottom: 18px;
+    font-size: $font-xl;
+  }
+  h4 {
+    border-bottom: 1px solid $color-lightgray;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    font-size: $font-l;
+  }
+  dt {
+    width: 150px;
+  }
+  dd {
+    display: flex;
+    width: 334px;
+  }
+  input {
+    width: 334px;
+    height: 40px;
+  }
+  .inp_layout {
+    display: flex;
+    border-bottom: 1px solid $color-lightgray;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+  }
+  .item_phone {
+    input {
+      width: 100px;
     }
   }
 }
