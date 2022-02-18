@@ -91,7 +91,7 @@
     </div>
     <section class="sec_packageInfo">
       <h3>배송정보</h3>
-      <article>
+      <article class="artic_info">
         <h4>주문자 정보</h4>
         <form action="">
           <dl class="list_inp">
@@ -104,13 +104,13 @@
             </div>
             <div class="inp_layout">
               <dt>휴대폰</dt>
-              <dd>
+              <dd class="item_phone">
                 <label for="" class="txt_hide">휴대폰 번호 앞자리</label>
-                <input type="text">
+                <input type="text" maxlength="3">
                 <label for="" class="txt_hide">휴대폰 번호 중간자리</label>
-                <input type="text">
+                <input type="text" maxlength="4">
                 <label for="" class="txt_hide">휴대폰 번호 끝자리</label>
-                <input type="text">
+                <input type="text" maxlength="4">
               </dd>
             </div>
             <div class="inp_layout">
@@ -123,7 +123,7 @@
           </dl>
         </form>
       </article>
-      <article>
+      <article class="artic_location">
         <h4>배송지 정보</h4>
         <form action="">
           <dl>
@@ -136,98 +136,106 @@
             </div>
             <div class="inp_layout">
               <dt>휴대폰</dt>
-              <dd>
+              <dd class="item_phone">
                 <label for="" class="txt_hide">휴대폰 번호 앞자리</label>
-                <input type="text">
+                <input type="text" maxlength="3">
                 <label for="" class="txt_hide">휴대폰 번호 중간자리</label>
-                <input type="text">
+                <input type="text" maxlength="4">
                 <label for="" class="txt_hide">휴대폰 번호 끝자리</label>
-                <input type="text">
+                <input type="text" maxlength="4">
               </dd>
             </div>
-            <div>
-              <dt class="inp_layout">배송주소</dt>
+            <div class="wrap_address">
+              <dt>배송주소</dt>
               <dd>
-                <input type="text" disabled>
-                <button type="button">우편번호 조회</button>
-                <label for="" class="txt_hide">상세 주소를 입력해주세요.</label>
-                <input type="text" name="" id="">
+                <div class="div_search">
+                  <input type="text" disabled class="inp_address">
+                  <button type="button">우편번호 조회</button>
+                </div>
+                <div class="div_address">
+                  <label for="" class="txt_hide">우편 번호를 검색해주세요.</label>
+                  <input type="text" name="" id="">
+                  <label for="" class="txt_hide">상세 주소를 입력해주세요.</label>
+                  <input type="text" name="" id="">
+                </div>
               </dd>
             </div>
-            <div>
-              <dt class="inp_layout">배송 메세지</dt>
-              <dd>
+            <div class="wrap_massage">
+              <dt>배송 메세지</dt>
+              <dd class="inp_massage">
                 <label for="" class="txt_hide">배송 메세지를 작성해주세요.</label>
-                <input type="text">
+                <input type="text" class="inp_massage">
               </dd>
             </div>
           </dl>
         </form>
       </article>
     </section>
-    <section>
+    <section class="sec_cashWay">
       <h3>결제수단</h3>
-      <ul>
+      <ul class="list_cashWay">
         <li>
-          <label for="">
-            <input type="radio" name="" id="">
+          <label>
+            <input type="radio" name="cashWay" id="">
             신용/체크카드
           </label>
         </li>
         <li>
-          <label for="">
-            <input type="radio" name="" id="">
+          <label>
+            <input type="radio" name="cashWay" id="">
             무통장 입금
           </label>
         </li>
         <li>
-          <label for="">
-            <input type="radio" name="" id="">
+          <label>
+            <input type="radio" name="cashWay" id="">
             휴대폰 결제
           </label>
         </li>
         <li>
-          <label for="">
-            <input type="radio" name="" id="">
+          <label>
+            <input type="radio" name="cashWay" id="">
             네이버페이
           </label>
         </li>
         <li>
-          <label for="">
-            <input type="radio" name="" id="">
+          <label>
+            <input type="radio" name="cashWay" id="">
             카카오페이
           </label>
         </li>
       </ul>
     </section>
-    <section>
+    <section class="sec_final">
       <h3>최종결제 정보</h3>
-      <div>
-        <dl>
-          <div>
-            <dt>-상품금액</dt>
-            <dd>46,500<span>원</span></dd>
-          </div>
-          <div>
-            <dt>-할인금액</dt>
-            <dd>0<span>원</span></dd>
-          </div>
-          <div>
-            <dt>배송비</dt>
-            <dd>0<span>원</span></dd>
-          </div>
-          <div>
-            <dt>결제금액</dt>
-            <dd>46,500<span>원</span></dd>
-          </div>
-        </dl>
-      </div>
-      <div>
-        <label for="">
-          <input type="checkbox">
-          주문 내용을 확인하였으며, 정보 제공 등에 동의합니다.
-        </label>
-        <button type="button">결제하기</button>
+      <div class="wrap_final">
+        <div class="wrap_dl">
+          <dl>
+            <div class="wrap_detail">
+              <dt>- 상품금액</dt>
+              <dd><span class="txt_price">46,500</span>원</dd>
+            </div>
+            <div class="wrap_detail">
+              <dt>- 할인금액</dt>
+              <dd><span class="txt_price">0</span>원</dd>
+            </div>
+            <div class="wrap_detail">
+              <dt>- 배송비</dt>
+              <dd><span class="txt_price">0</span>원</dd>
+            </div>
+            <div class="wrap_detail wrap_lastOrder">
+              <dt>- 결제금액</dt>
+              <dd class="txt_price txt_red"><span class="txt_red">46,500</span>원</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="wrap_check">
+          <label for="">
+            <input type="checkbox">
+            주문 내용을 확인하였으며, 정보 제공 등에 동의합니다.
+          </label>
+          <button type="button">결제하기</button>
+        </div>
       </div>
     </section>
   </main>
