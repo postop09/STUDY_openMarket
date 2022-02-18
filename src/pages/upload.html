@@ -31,41 +31,45 @@
       <section>
         <h3 class="txt_hide">상품 정보 입력</h3>
         <form action="" class="form_upload">
-          <div class="wrap_img">
-            <p>상품 이미지</p>
-            <label for=""><img src="../img/icon-img.png" alt="이미지를 선택해주세요."></label>
-            <input type="file" accept="image/*" class="inp_hide">
-          </div>
-          <div class="wrap_info">
-            <label>
-              상품명
-              <input type="text" class="inp_name">
-            </label>
-            <label>
-              판매가
-              <input type="text" class="inp_price">
-            </label>
-            <div class="wrap_package">
-              <p class="txt_package">배송방법</p>
-              <button class="btn_package on">택배, 소포, 등기</button>
-              <button class="btn_package">직접배송(화물배달)</button>
+          <div class="wrap_upload">
+            <div class="wrap_img">
+              <p>상품 이미지</p>
+              <label for=""><img src="../img/icon-img.png" alt="이미지를 선택해주세요."></label>
+              <input type="file" accept="image/*" class="inp_hide">
             </div>
-            <label>
-              기본 배송비
-              <input type="text" class="inp_fee">
-            </label>
-            <label>
-              재고
-              <input type="text" class="inp_stock">
-            </label>
+            <div class="wrap_info">
+              <label>
+                상품명
+                <input type="text" class="inp_name">
+              </label>
+              <label>
+                판매가
+                <input type="text" class="inp_price">
+              </label>
+              <div class="wrap_package">
+                <p class="txt_package">배송방법</p>
+                <button class="btn_package on">택배, 소포, 등기</button>
+                <button class="btn_package">직접배송(화물배달)</button>
+              </div>
+              <label>
+                기본 배송비
+                <input type="text" class="inp_fee">
+              </label>
+              <label>
+                재고
+                <input type="text" class="inp_stock">
+              </label>
+            </div>
+          </div>
+          <div class="wrap_detail">
+            <p>제품 상세 정보</p>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <div class="wrap_btn">
+              <button type="reset" class="btn_cancel">취소</button>
+              <button type="submit" class="btn_save">저장하기</button>
+            </div>
           </div>
         </form>
-        <div class="wrap_detail">
-          <p>제품 상세 정보</p>
-          <textarea name="" id="" cols="30" rows="10"></textarea>
-        </div>
-        <button type="reset">취소</button>
-        <button type="submit">저장하기</button>
       </section>
     </div>
   </main>
