@@ -4,10 +4,13 @@
 @import 'modal';
 
 .index_header {
-  a {
-    display: flex;
+  .wrap_header {
     max-width: 1280px;
     margin: auto;
+  }
+  a {
+    display: flex;
+    width: fit-content;
   }
   h1 {
     font-size: 30px;

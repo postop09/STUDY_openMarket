@@ -1,0 +1,121 @@
+@import 'utilCode';
+@import 'openMarket';
+@import 'navAndFooter';
+@import 'modal';
+
+.index_header {
+  .wrap_header {
+    max-width: 1280px;
+    margin: auto;
+  }
+  a {
+    display: flex;
+    width: fit-content;
+  }
+  h1 {
+    font-size: 30px;
+    margin-left: 16px;
+  }
+}
+.upload_main {
+  padding: 38px 0 136px;
+  max-width: 1280px;
+  margin: auto;
+  h2 {
+    margin-bottom: 42px;
+    font-size: $font-xxl;
+  }
+}
+.wrap_upload {
+  display: flex;
+}
+.sec_upload {
+  margin-right: 80px;
+  h3 {
+    margin-bottom: 10px;
+    font-size: $font-m;
+    color: $color-red;
+  }
+  .wrap_warning {
+    border-radius: 5px;
+    width: 320px;
+    padding: 20px;
+    background-color: #FFEFE8;
+  }
+  p {
+    font-size: $font-s;
+  }
+  p:not(p:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.form_upload {
+  display: flex;
+  .wrap_img {
+    margin-right: 40px;
+    p {
+      margin-bottom: 10px;
+      color: $color-darkgray;
+    }
+    label {
+      display: block;
+      position: relative;
+      width: 454px;
+      height: 454px;
+      background-color: $color-lightgray;
+      cursor: pointer;
+    }
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .inp_hide {
+      overflow: hidden;
+      width: 1px;
+      height: 1px;
+      opacity: 0;
+    }
+  }
+  .wrap_info {
+    label {
+      display: block;
+      margin-bottom: 16px;
+      color: $color-darkgray;
+    }
+    input {
+      display: block;
+      border: 1px solid $color-lightgray;
+      border-radius: 5px;
+      width: 220px;
+      height: 54px;
+      margin-top: 10px;
+      padding-left: 10px;
+    }
+    .inp_name {
+      width: 826px;
+      height: 54px;
+    }
+  }
+  .wrap_package {
+    margin-bottom: 16px;
+    .txt_package {
+      margin: 16px 0 10px;
+      color: $color-darkgray;
+    }
+    .btn_package {
+      border: 1px solid $color-lightgray;
+      border-radius: 5px;
+      width: 220px;
+      height: 54px;
+      font-weight: 700;
+      background-color: white;
+    }
+    .btn_package.on {
+      border: none;
+      color: white;
+      background-color: $color-main;
+    }
+  }
+}

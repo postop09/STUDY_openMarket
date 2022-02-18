@@ -5,87 +5,95 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>호두마켓 | 상품등록</title>
+  <link rel="stylesheet" href="../css/upload.css">
 </head>
 <body>
-  <header>
-    <img src="../img/Logo-hodu.png" alt="">
-    <h1>판매자 센터</h1>
+  <header class="index_header">
+    <div class="wrap_header">
+      <a href="">
+        <img src="../img/Logo-hodu.png" alt="호두마켓 메인페이지로 이동">
+        <h1>판매자 센터</h1>
+      </a>
+    </div>
   </header>
-  <main>
+  <main class="upload_main">
     <h2>상품 등록</h2>
-    <section>
-      <h3>*상품 등록 주의사항</h3>
-      <div>
-        <p>- 너무 귀여운 사진은 심장이 아파올 수 있습니다.</p>
-        <p>- 유소년에게서 천자만홍이 피고 이상이 온갖 들어 약동하다. 이상의 가지에 사랑의 있는가? 주며, 끓는 힘차게 얼음이 얼음 가치를 황금시대의 있음으로써 사라지지 것이다. 이 뜨거운지라, 이상의 속에서 이것은 피가 보배를 황금시대의 싹이 사막이다.</p>
-        <p>- 자신과 우는 옷을 지혜는 아니다. 더운지라 설레는 기쁘며, 위하여서, 평화스러운 광야에서 그리하였는가? 소담스러운 위하여 인도하겠다는 어디 무엇을 이상을 같지 따뜻한 청춘 칼이다.</p>
-        <p>- 가치를 그들을 예수는 찬미를 가슴이 과실이 이것이다. 희망의 것이다.보라, 풍부하게 이것은 황금시대를 얼마나 인간에 돋고, 이것이다.</p>
-      </div>
-    </section>
-    <section>
-      <h3>상품 정보 입력</h3>
-      <form action="">
-        <div>
-          <p>상품 이미지</p>
-          <label for=""></label>
-          <input type="file">
+    <div class="wrap_upload">
+      <section class="sec_upload">
+        <h3>*상품 등록 주의사항</h3>
+        <div class="wrap_warning">
+          <p>- 너무 귀여운 사진은 심장이 아파올 수 있습니다.</p>
+          <p>- 유소년에게서 천자만홍이 피고 이상이 온갖 들어 약동하다. 이상의 가지에 사랑의 있는가? 주며, 끓는 힘차게 얼음이 얼음 가치를 황금시대의 있음으로써 사라지지 것이다. 이 뜨거운지라, 이상의 속에서 이것은 피가 보배를 황금시대의 싹이 사막이다.</p>
+          <p>- 자신과 우는 옷을 지혜는 아니다. 더운지라 설레는 기쁘며, 위하여서, 평화스러운 광야에서 그리하였는가? 소담스러운 위하여 인도하겠다는 어디 무엇을 이상을 같지 따뜻한 청춘 칼이다.</p>
+          <p>- 가치를 그들을 예수는 찬미를 가슴이 과실이 이것이다. 희망의 것이다.보라, 풍부하게 이것은 황금시대를 얼마나 인간에 돋고, 이것이다.</p>
         </div>
-        <div>
-          <label>
-            상품명
-            <input type="text">
-          </label>
-          <label>
-            판매가
-            <input type="text">
-          </label>
-          <div>
-            <p>배송방법</p>
-            <label for="">택배, 소포, 등기</label>
-            <input type="radio" name="">
-            <label for="">직접배송(화물배달)</label>
-            <input type="radio" name="">
+      </section>
+      <section>
+        <h3 class="txt_hide">상품 정보 입력</h3>
+        <form action="" class="form_upload">
+          <div class="wrap_img">
+            <p>상품 이미지</p>
+            <label for=""><img src="../img/icon-img.png" alt="이미지를 선택해주세요."></label>
+            <input type="file" accept="image/*" class="inp_hide">
           </div>
-          <label>
-            기본 배송비
-            <input type="text">
-          </label>
-          <label>
-            재고
-            <input type="text">
-          </label>
-        </div>
-        <div>
+          <div class="wrap_info">
+            <label>
+              상품명
+              <input type="text" class="inp_name">
+            </label>
+            <label>
+              판매가
+              <input type="text" class="inp_price">
+            </label>
+            <div class="wrap_package">
+              <p class="txt_package">배송방법</p>
+              <button class="btn_package on">택배, 소포, 등기</button>
+              <button class="btn_package">직접배송(화물배달)</button>
+            </div>
+            <label>
+              기본 배송비
+              <input type="text" class="inp_fee">
+            </label>
+            <label>
+              재고
+              <input type="text" class="inp_stock">
+            </label>
+          </div>
+        </form>
+        <div class="wrap_detail">
           <p>제품 상세 정보</p>
           <textarea name="" id="" cols="30" rows="10"></textarea>
         </div>
         <button type="reset">취소</button>
         <button type="submit">저장하기</button>
-      </form>
-    </section>
-  </main>
-  <footer>
-    <div>
-      <ul>
-        <li><a href="">호두샵 소개</a></li>
-        <li><a href="">이용약관</a></li>
-        <li><a href="">개인정보처리방침</a></li>
-        <li><a href="">전자금융거래약관</a></li>
-        <li><a href="">청소년보호정책</a></li>
-        <li><a href="">제휴문의</a></li>
-      </ul>
-      <ul>
-        <li><img src="../img/icon-insta.png" alt=""></li>
-        <li><img src="../img/icon-fb.png" alt=""></li>
-        <li><img src="../img/icon-yt.png" alt=""></li>
-      </ul>
+      </section>
     </div>
-    <p>
-      <strong>(주)HODU SHOP</strong>
-      <address>제주특별자치도 제주시 동광로 137 제주코딩베이스 캠프</address>
-      <small>사업자번호 : 000-0000-0000 | 통신판매업</small>
-      <small>대표 : 김호두</small>
-    </p>
+  </main>
+  <footer class="index_footer">
+    <h2 class="txt_hide">기업 소개</h2>
+    <div class="wrap_footer">
+      <div class="wrap_list">
+        <ul class="list_rules">
+          <li><a href="">호두샵 소개</a></li>
+          <li><a href="">이용약관</a></li>
+          <li><a href="">개인정보처리방침</a></li>
+          <li><a href="">전자금융거래약관</a></li>
+          <li><a href="">청소년보호정책</a></li>
+          <li><a href="">제휴문의</a></li>
+        </ul>
+        <ul class="list_sns">
+          <li><a href=""><img src="../img/icon-insta.png" alt=""></a></li>
+          <li><a href=""><img src="../img/icon-fb.png" alt=""></a></li>
+          <li><a href=""><img src="../img/icon-yt.png" alt=""></a></li>
+        </ul>
+      </div>
+      <div class="txt_info">
+        <strong class="txt_gray">(주)HODU SHOP</strong>
+        <address class="txt_gray">제주특별자치도 제주시 동광로 137 제주코딩베이스 캠프</address>
+        <small class="txt_gray">사업자번호 : 000-0000-0000 | 통신판매업</small>
+        <small class="txt_gray txt_ceo">대표 : 김호두</small>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
