@@ -191,3 +191,12 @@
     justify-content: center;
   }
 }
+
+@media screen and (max-width: 1280px) {
+  .index_header {
+    width: 1280px;
+  }
+  .index_footer {
+    width: 1280px;
+  }
+}

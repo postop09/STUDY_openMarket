@@ -393,4 +393,13 @@
   border-bottom: 5px solid #21BF48;
   color: #21BF48;
 }
+
+@media screen and (max-width: 1280px) {
+  .index_header {
+    width: 1280px;
+  }
+  .index_footer {
+    width: 1280px;
+  }
+}
 /*# sourceMappingURL=product.css.map */

@@ -50,7 +50,12 @@
   background-color: white;
 }
 
+.wrap_login .sec_login.on {
+  display: block;
+}
+
 .wrap_login .sec_login {
+  display: none;
   border: 1px solid #C4C4C4;
   border-top: none;
   border-bottom-left-radius: 10px;
@@ -87,10 +92,6 @@
   color: white;
   background-color: #21BF48;
   cursor: pointer;
-}
-
-.wrap_login .sec_seller {
-  display: none;
 }
 
 .wrap_login .list_new {

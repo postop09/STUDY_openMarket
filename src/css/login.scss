@@ -26,7 +26,11 @@
       background-color: white;
     }
   }
+  .sec_login.on {
+    display: block;
+  }
   .sec_login {
+    display: none;
     border: 1px solid $color-lightgray;
     border-top: none;
     border-bottom-left-radius: 10px;
@@ -59,9 +63,6 @@
       background-color: $color-main;
       cursor: pointer;
     }
-  }
-  .sec_seller {
-    display: none;
   }
   .list_new {
     display: flex;

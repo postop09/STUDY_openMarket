@@ -8,14 +8,14 @@
   <link rel="stylesheet" href="../css/new.css">
 </head>
 <body>
-  <main>
+  <main class="new_main">
     <h1 class="txt_hide">호두마켓 회원가입 창</h1>
     <div class="wrap_new">
       <a href=""><img src="../img/Logo-hodu-b.png" alt="호두마켓 메인페이지로 이동" class="img_hodu"></a>
       <!-- type of new -->
       <ul class="list_newType">
-        <li><button type="button" class="on">구매회원가입</button></li>
-        <li><button type="button">판매회원가입</button></li>
+        <li><button type="button" class="btn_new on">구매회원가입</button></li>
+        <li><button type="button" class="btn_new ">판매회원가입</button></li>
       </ul>
       <!-- 구매회원가입 창 -->
       <section class="sec_new on">
@@ -62,17 +62,17 @@
                     <option value="">018</option>
                   </select> -->
                   <label for="inp_mid" class="txt_hide">휴대폰 중간 자리</label>
-                  <input type="text" name="" maxlength="4" id="inp_mid">
+                  <input type="text" maxlength="4" id="inp_mid">
                   <label for="inp_last" class="txt_hide">휴대폰 끝 자리</label>
-                  <input type="text" name="" maxlength="4" id="inp_last">
+                  <input type="text" maxlength="4" id="inp_last">
                 </div>
                 <p>이메일</p>
                 <div class="wrap_email">
-                  <label for=""></label>
-                  <input type="text" name="" id="">
+                  <label for="inp_emailFront" class="txt_hide">이메일 아이디 작성란</label>
+                  <input type="text" id="inp_emailFront">
                   <span>@</span>
-                  <label for=""></label>
-                  <input type="text" name="" id="">
+                  <label for="inp_emailBack" class="txt_hide">이메일 주소 작성란</label>
+                  <input type="text" id="inp_emailBack">
                 </div>
               </div>
             </div>
@@ -136,11 +136,11 @@
                 </div>
                 <p>이메일</p>
                 <div class="wrap_email">
-                  <label for=""></label>
-                  <input type="text" name="" id="">
+                  <label for="inp_emailFront" class="txt_hide">이메일 아이디 작성란</label>
+                  <input type="text" id="inp_emailFront">
                   <span>@</span>
-                  <label for=""></label>
-                  <input type="text" name="" id="">
+                  <label for="inp_emailBack" class="txt_hide">이메일 주소 작성란</label>
+                  <input type="text" id="inp_emailBack">
                 </div>
               </div>
               <div class="wrap_storeInfo">
@@ -166,5 +166,6 @@
       </section>
     </div>
   </main>
+  <script src="../JavaScript/new.js"></script>
 </body>
 </html>

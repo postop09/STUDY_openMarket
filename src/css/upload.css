@@ -240,7 +240,7 @@
 
 .upload_main {
   padding: 38px 0 136px;
-  max-width: 1280px;
+  width: 1280px;
   margin: auto;
 }
 
@@ -402,5 +402,14 @@
   border: none;
   color: white;
   background-color: #21BF48;
+}
+
+@media screen and (max-width: 1280px) {
+  .index_header {
+    width: 1280px;
+  }
+  .index_footer {
+    width: 1280px;
+  }
 }
 /*# sourceMappingURL=upload.css.map */
