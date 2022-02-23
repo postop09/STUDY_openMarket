@@ -86,6 +86,7 @@
   height: 54px;
   margin-top: 10px;
   padding-left: 5px;
+  font-size: 16px;
 }
 
 .wrap_form .wrap_id {
@@ -150,7 +151,7 @@
 .wrap_form .wrap_phone .list_phone {
   display: none;
   position: absolute;
-  top: 60px;
+  top: 63px;
   border: 1px solid #C4C4C4;
   border-radius: 5px;
   width: 152px;
@@ -187,10 +188,9 @@
   position: relative;
 }
 
-.wrap_form .wrap_phone .wrap_front p {
+.wrap_form .wrap_phone .wrap_front .txt_phone {
   border: 1px solid #C4C4C4;
   border-radius: 5px;
-  padding-left: 53px;
   width: 152px;
   height: 54px;
   line-height: 52px;
@@ -198,7 +198,7 @@
 
 .wrap_form .wrap_phone .wrap_front .btn_front {
   position: absolute;
-  top: 16px;
+  top: 25px;
   right: 10px;
   border: none;
   background: none;

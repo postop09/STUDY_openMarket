@@ -58,6 +58,7 @@
     height: 54px;
     margin-top: 10px;
     padding-left: 5px;
+    font-size: $font-m;
   }
   .wrap_id {
     display: flex;
@@ -100,7 +101,7 @@
     .list_phone {
       display: none;
       position: absolute;
-      top: 60px;
+      top: 63px;
       border: 1px solid $color-lightgray;
       border-radius: 5px;
       width: 152px;
@@ -130,17 +131,16 @@
     }
     .wrap_front {
       position: relative;
-      p {
+      .txt_phone {
         border: 1px solid $color-lightgray;
         border-radius: 5px;
-        padding-left: 53px;
         width: 152px;
         height: 54px;
         line-height: 52px;
       }
       .btn_front {
         position: absolute;
-        top: 16px;
+        top: 25px;
         right: 10px;
         border: none;
         background: none;
