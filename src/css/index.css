@@ -152,6 +152,10 @@
   color: #767676;
 }
 
+.index_main {
+  position: relative;
+}
+
 .sec_slide {
   position: relative;
 }
@@ -259,10 +263,15 @@
   font-weight: 400;
 }
 
+.sec_modal.on {
+  display: block;
+}
+
 .sec_modal {
+  display: none;
   position: absolute;
-  top: 85px;
-  right: 30px;
+  top: -7px;
+  right: 305px;
   border-radius: 10px;
   -webkit-box-shadow: 0px 3px 1px 1px #C4C4C4;
           box-shadow: 0px 3px 1px 1px #C4C4C4;
@@ -289,5 +298,20 @@
 
 .sec_modal .btn_myPage {
   margin-bottom: 8px;
+}
+
+@media screen and (max-width: 1280px) {
+  .index_header {
+    width: 1280px;
+  }
+  .index_main {
+    width: 1280px;
+  }
+  .index_main .sec_modal {
+    right: 0px;
+  }
+  .index_footer {
+    width: 1280px;
+  }
 }
 /*# sourceMappingURL=index.css.map */
