@@ -296,6 +296,10 @@
   background: none;
 }
 
+.wrap_order .wrap_count .item_box img {
+  padding: 14px;
+}
+
 .wrap_order .wrap_count .txt_count {
   border-left: none;
   border-right: none;
