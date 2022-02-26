@@ -231,6 +231,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 78px;
+  -webkit-column-gap: 70px;
+          column-gap: 70px;
+  width: 1280px;
 }
 
 .sec_products .list_product .item_product {
@@ -241,6 +247,13 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.sec_products .list_product .img_product {
+  border: 1px solid #C4C4C4;
+  border-radius: 10px;
+  width: 380px;
+  height: 380px;
 }
 
 .sec_products .list_product .txt_cate {

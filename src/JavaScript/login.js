@@ -43,6 +43,8 @@ async function login() {
   })
   const json = await res.json();
   console.log(json);
+  localStorage.setItem('Authorization', json.token);
+  location.href = "product.html";
 }
 const btnLogin = main.querySelector('.btn_customerLogin');
 btnLogin.addEventListener('click', login);

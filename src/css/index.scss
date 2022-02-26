@@ -62,9 +62,19 @@
   max-width: 1280px;
   .list_product {
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 78px;
+    column-gap: 70px;
+    width: 1280px;
     .item_product {
       display: flex;
       flex-direction: column;
+    }
+    .img_product {
+      border: 1px solid $color-lightgray;
+      border-radius: 10px;
+      width: 380px;
+      height: 380px;
     }
     .txt_cate {
       margin-top: 16px;
