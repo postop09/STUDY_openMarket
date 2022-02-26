@@ -20,8 +20,8 @@ async function product() {
     const listItem = document.querySelector('.list_product');
 
     listItem.innerHTML += `
-      <li class="item_product" key="${results[i].product_id}">
-        <a href=""><img src="${results[i].image}" alt="" class="img_product"></a>
+      <li key="${results[i].product_id}" class="item_product">
+        <img src="${results[i].image}" alt="" class="img_product">
         <small class="txt_cate">${results[i].product_info}</small>
         <p class="txt_name">${results[i].product_name}</p>
         <strong class="txt_price">${results[i].price}<span class="txt_unit">원</span></strong>
@@ -33,6 +33,17 @@ async function product() {
   }
 }
 product();
+
+function showItem() {
+  const products = document.querySelector('.list_product');
+
+  products.addEventListener('click', (e) => {
+    localStorage.setItem('productId',e.target.parentNode.attributes.key.value);
+    location.href = 'product.html';
+  })
+  console.log(products);
+}
+showItem();
 
 // 로그인 버튼 클릭
 const btnLogin = document.querySelector('.btn_pageLogin');

@@ -254,6 +254,7 @@
   border-radius: 10px;
   width: 380px;
   height: 380px;
+  cursor: pointer;
 }
 
 .sec_products .list_product .txt_cate {

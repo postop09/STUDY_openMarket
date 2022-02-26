@@ -5,7 +5,9 @@ const secModal = main.querySelectorAll('.sec_modal');
 async function products() {
   const url = 'http://13.209.150.154:8000';
   // products/${product_id}/를 저장해서 불러와야 된다.
-  const res = await fetch(url + '/products/1/', {
+  const productId = localStorage.getItem('productId');
+  // console.log(productId);
+  const res = await fetch(url + `/products/${productId}/`, {
     method : 'GET',
     headers : {
       'Content-Type' : 'application/json'
