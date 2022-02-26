@@ -336,13 +336,13 @@
   color: #21BF48;
 }
 
-.wrap_order .wrap_price .txt_price {
-  font-size: 36px;
+.wrap_order .wrap_price strong {
+  font-size: 18px;
   color: #21BF48;
 }
 
-.wrap_order .wrap_price .txt_price span {
-  font-size: 18px;
+.wrap_order .wrap_price .txt_price {
+  font-size: 36px;
   color: #21BF48;
 }
 

@@ -91,13 +91,13 @@
         color: $color-main;
       }
     }
+    strong {
+      font-size: $font-l;
+      color: $color-main;
+    }
     .txt_price {
       font-size: $font-xxl;
       color: $color-main;
-      span {
-        font-size: $font-l;
-        color: $color-main;
-      }
     }
   }
   .list_btn {

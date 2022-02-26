@@ -1,15 +1,3 @@
-// 로그인 버튼 클릭
-const btnLogin = document.querySelector('.btn_pageLogin');
-const modalLogin = document.querySelector('.sec_modal');
-
-btnLogin.addEventListener('click', (e) => {
-  // if 로그인 해야할 때, 정상적으로 로그인 페이지로 이동
-
-  // if 로그인한 상태 일시 (로그인한 상태 확인은..?)
-  e.preventDefault();
-  modalLogin.classList.toggle('on');
-})
-
 // API
 async function product() {
   const url = 'http://13.209.150.154:8000';
@@ -45,3 +33,15 @@ async function product() {
   }
 }
 product();
+
+// 로그인 버튼 클릭
+const btnLogin = document.querySelector('.btn_pageLogin');
+const modalLogin = document.querySelector('.sec_modal');
+
+btnLogin.addEventListener('click', (e) => {
+  // if 로그인 해야할 때, 정상적으로 로그인 페이지로 이동
+
+  // if 로그인한 상태 일시 (로그인한 상태 확인은..?)
+  e.preventDefault();
+  modalLogin.classList.toggle('on');
+});
