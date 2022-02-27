@@ -48,3 +48,5 @@ async function login() {
 }
 const btnLogin = main.querySelector('.btn_customerLogin');
 btnLogin.addEventListener('click', login);
+
+// 로그인 정보를 저장하는 방법

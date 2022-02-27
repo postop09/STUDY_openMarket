@@ -41,13 +41,12 @@ function showItem() {
     localStorage.setItem('productId',e.target.parentNode.attributes.key.value);
     location.href = 'product.html';
   })
-  console.log(products);
 }
 showItem();
 
 // 로그인 버튼 클릭
 const btnLogin = document.querySelector('.btn_pageLogin');
-const modalLogin = document.querySelector('.sec_modal');
+const modalLogin = document.querySelector('.sec_navModal');
 
 btnLogin.addEventListener('click', (e) => {
   // if 로그인 해야할 때, 정상적으로 로그인 페이지로 이동
@@ -56,3 +55,21 @@ btnLogin.addEventListener('click', (e) => {
   e.preventDefault();
   modalLogin.classList.toggle('on');
 });
+
+// 로그아웃
+async function logout() {
+  const url = 'http://13.209.150.154:8000';
+  const res = await fetch(url + '/accounts/logout/', {
+    method : 'GET',
+    headers : {
+      'Content-Type' : 'application/json'
+    },
+  })
+  const json = await res.json();
+  
+  localStorage.removeItem('Authorization');
+  modalLogin.classList.remove('on');
+  alert(json.detail);
+}
+const btnLogout = modalLogin.querySelector('.btn_logout');
+btnLogout.addEventListener('click', logout);

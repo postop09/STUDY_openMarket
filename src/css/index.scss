@@ -1,6 +1,7 @@
 @import 'utilCode';
 @import 'openMarket';
 @import 'navAndFooter';
+@import 'modal';
 
 .index_main {
   position: relative;
@@ -96,10 +97,10 @@
   }
 }
 // MyPage & Logout
-.sec_modal.on {
+.sec_navModal.on {
   display: block;
 }
-.sec_modal {
+.sec_navModal {
   display: none;
   position: absolute;
   top: -7px;
