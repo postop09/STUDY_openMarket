@@ -75,6 +75,10 @@
   padding-left: 5px;
 }
 
+.wrap_login .sec_login .txt_err.on {
+  display: block;
+}
+
 .wrap_login .sec_login .txt_err {
   display: none;
   margin-top: 26px;

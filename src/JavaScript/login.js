@@ -28,6 +28,7 @@ userChange();
 async function login() {
   const id = main.querySelector('#inp_customerId');
   const pw = main.querySelector('#inp_customerPw');
+  const err = main.querySelector('.txt_err');
   const url = 'http://13.209.150.154:8000';
   const loginData = {
 		'username': id.value,
@@ -42,9 +43,28 @@ async function login() {
     body: JSON.stringify(loginData)
   })
   const json = await res.json();
-  console.log(json);
-  localStorage.setItem('Authorization', json.token);
-  location.href = "product.html";
+  // console.log(res.headers);
+  // console.log(json);
+  // console.log(document.cookie);
+  
+  if (res.statusText == 'OK') {
+    localStorage.setItem('Authorization', json.token);
+    localStorage.setItem('id', json.id);
+    location.href = "index.html";
+  } else if (res.statusText == 'Bad Request' && id.value == '') {
+    err.classList.add('on');
+    err.innerHTML = '아이디를 입력해주세요.';
+    id.focus();
+  } else if (res.statusText == 'Bad Request' && pw.value == '') {
+    err.classList.add('on');
+    err.innerHTML = '비밀번호를 입력해주세요.';
+    pw.focus();
+  } else if (res.statusText == 'Unauthorized') {
+    err.classList.add('on');
+    err.innerHTML = '아이디 또는 비밀번호가 일치하지 않습니다.';
+    pw.value = '';
+    pw.focus();
+  }
 }
 const btnLogin = main.querySelector('.btn_customerLogin');
 btnLogin.addEventListener('click', login);

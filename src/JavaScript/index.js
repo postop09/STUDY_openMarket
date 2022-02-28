@@ -1,7 +1,6 @@
 // API
 async function product() {
   const url = 'http://13.209.150.154:8000';
-
   const res = await fetch(url + '/products/', {
     method : 'GET',
     headers : {
@@ -10,6 +9,7 @@ async function product() {
   })
   const json = await res.json();
   // console.log(json.results);
+
   const results = [...json.results].reverse(); // 객체를 배열로 변환
   // console.log(results.length); // 배열의 길이 출력
 
@@ -47,14 +47,24 @@ showItem();
 // 로그인 버튼 클릭
 const btnLogin = document.querySelector('.btn_pageLogin');
 const modalLogin = document.querySelector('.sec_navModal');
+const token = localStorage.getItem('Authorization');
+const id = localStorage.getItem('id');
+const myPage = document.querySelector('.btn_pageLogin');
+// if 로그인한 상태 일시 (로그인한 상태 확인은..?)
+if (token !== null && id !== null) {
+  myPage.innerHTML = `<img src="../img/icon-user.png" alt="" class="img_icon">마이페이지`;
+};
 
 btnLogin.addEventListener('click', (e) => {
   // if 로그인 해야할 때, 정상적으로 로그인 페이지로 이동
-
-  // if 로그인한 상태 일시 (로그인한 상태 확인은..?)
-  e.preventDefault();
-  modalLogin.classList.toggle('on');
+  if (token === null || id === null) {
+    location.href = 'login.html'
+  } else {
+    e.preventDefault();
+    modalLogin.classList.toggle('on');
+  }
 });
+
 
 // 로그아웃
 async function logout() {
@@ -66,10 +76,12 @@ async function logout() {
     },
   })
   const json = await res.json();
-  
   localStorage.removeItem('Authorization');
+  localStorage.removeItem('id');
   modalLogin.classList.remove('on');
   alert(json.detail);
+
+  myPage.innerHTML = `<img src="../img/icon-user.png" alt="" class="img_icon">로그인`;
 }
 const btnLogout = modalLogin.querySelector('.btn_logout');
 btnLogout.addEventListener('click', logout);
