@@ -15,6 +15,7 @@ async function products() {
   });
   const json = await res.json();
   const secOrder = main.querySelector('.wrap_order');
+  console.log(json);
 
   secOrder.innerHTML = `
     <img src="${json.image}" alt="" class="img_product">
@@ -28,7 +29,7 @@ async function products() {
       <small class="txt_package">택배배송 / 무료배송</small>
       <div class="wrap_count">
         <button type="button" class="item_box"><img src="../img/icon-minus-line.png" alt="수량 빼기" class="img_minus"></button>
-        <input type="text" value="1" class="item_box txt_count">
+        <input type="text" readonly value="1" class="item_box txt_count">
         <button type="button" class="item_box"><img src="../img/icon-plus-line.png" alt="수량 더하기" class="img_plus"></button>
       </div>
       <div class="wrap_price">
@@ -53,7 +54,7 @@ async function products() {
     wrapCount.addEventListener('click', (e) => {
       if (e.target.className == 'img_minus' && txtCount.value > 1) {
         txtCount.value --;
-      } else if (e.target.className == 'img_plus') {
+      } else if (e.target.className == 'img_plus' && txtCount.value < json.stock) {
         txtCount.value ++;
       }
       txtCount2.textContent = txtCount.value;
@@ -70,9 +71,13 @@ products();
 // 로그인 안내
 function anounceLogin() {
   const btnTake = main.querySelector('.btn_purchase');
-  // 로그인 안한 경우
-  btnTake.addEventListener('click', () => {
-    secModal[0].classList.add('on');
+  btnTake.addEventListener('click', (e) => {
+    if (sessionStorage.Authorization === 'null' || sessionStorage.id === 'null' || sessionStorage.Authorization === undefined || sessionStorage.id === undefined) {
+      e.preventDefault();
+      secModal[0].classList.add('on');
+    } else {
+      location.href = 'cash.html'
+    };
   })
 }
 

@@ -28,15 +28,14 @@
         </div>
         <div class="wrap_navItem wrap_icon">
           <li>
-            <a href="">
+            <a href="cart.html" class="btn_myBag">
               <img src="../img/icon-shopping-cart.png" alt="" class="img_icon">
               장바구니
             </a>
           </li>
           <li>
             <a href="login.html" class="btn_pageLogin">
-              <img src="../img/icon-user.png" alt="" class="img_icon">
-              로그인 <!-- 구매회원 로그인한 상태라면 '마이페이지' -->
+              <!-- 로그인 여부 확인 -->
             </a>
           </li>
         </div>
@@ -55,6 +54,13 @@
         </div> -->
       </ul>
     </nav>
+    <section class="sec_navModal">
+      <h3 class="txt_hide">마이페이지 또는 로그아웃 창</h3>
+      <ul>
+        <li><button type="button" class="btn_modal btn_myPage">마이페이지</button></li>
+        <li><button type="button" class="btn_modal btn_logout">로그아웃</button></li>
+      </ul>
+    </section>
   </header>
   <main class="index_main">
     <h2 class="txt_hide">상품소개</h2>
@@ -77,20 +83,20 @@
     <section class="sec_products">
       <h3 class="txt_hide">전시되어 있는 상품</h3>
       <ul class="list_product">
-        <!-- <li class="item_product">
-          <a href=""><img src="../img/img.png" alt="" class="img_product"></a>
-          <small class="txt_cate">우당탕탕 라이캣의 실험실</small>
-          <p class="txt_name">Hack Your Life 개발자 노트북 파우치</p>
-          <strong class="txt_price">29,000<span class="txt_unit">원</span></strong>
-        </li> -->
+        <!-- 상품 목록 -->
       </ul>
     </section>
-    <section class="sec_navModal">
-      <h3 class="txt_hide">마이페이지 또는 로그아웃 창</h3>
-      <ul>
-        <li><button type="button" class="btn_modal btn_myPage">마이페이지</button></li>
-        <li><button type="button" class="btn_modal btn_logout">로그아웃</button></li>
-      </ul>
+    <section class="sec_modal sec_noticeLogin">
+      <h3 class="txt_hide">로그인 안내 창</h3>
+      <div class="wrap_modal">
+        <p>로그인이 필요한 서비스 입니다.</p>
+        <p>로그인 하시겠습니까?</p>
+        <ul class="list_btn">
+          <li><button type="button" class="btn_modal btn_no">아니오</button></li>
+          <li><button type="button" class="btn_modal on">예</button></li>
+        </ul>
+        <button type="button" class="btn_close"><img src="../img/icon-delete.png" alt="로그인 안내 창 닫기"></button>
+      </div>
     </section>
   </main>
   <footer class="index_footer">
@@ -120,5 +126,6 @@
     </div>
   </footer>
   <script src="../JavaScript/index.js"></script>
+  <script src="../JavaScript/header.js"></script>
 </body>
 </html>

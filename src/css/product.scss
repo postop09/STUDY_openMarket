@@ -3,6 +3,9 @@
 @import 'navAndFooter';
 @import 'modal';
 
+.product_main {
+  position: relative;
+}
 .wrap_product {
   max-width: 1280px;
   margin: 80px auto 0;

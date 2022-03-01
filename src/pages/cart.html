@@ -9,12 +9,12 @@
 </head>
 <body>
   <header class="index_header">
-    <h1 class="txt_hide">제품 상세보기 페이지</h1>
+    <h1 class="txt_hide">호두마켓에 오신것을 환영합니다.</h1>
     <nav>
       <ul class="list_nav">
         <div class="wrap_navItem wrap_logo">
           <li>
-            <a href="">
+            <a href="index.html">
               <img src="../img/Logo-hodu.png" alt="호두마켓">
             </a>
           </li>
@@ -28,15 +28,14 @@
         </div>
         <div class="wrap_navItem wrap_icon">
           <li>
-            <a href="">
+            <a href="cart.html" class="btn_myBag">
               <img src="../img/icon-shopping-cart.png" alt="" class="img_icon">
               장바구니
             </a>
           </li>
           <li>
-            <a href="">
-              <img src="../img/icon-user.png" alt="" class="img_icon">
-              로그인 <!-- 구매회원 로그인한 상태라면 '마이페이지' -->
+            <a href="login.html" class="btn_pageLogin">
+              <!-- 로그인 여부 확인 -->
             </a>
           </li>
         </div>
@@ -55,6 +54,13 @@
         </div> -->
       </ul>
     </nav>
+    <section class="sec_navModal">
+      <h3 class="txt_hide">마이페이지 또는 로그아웃 창</h3>
+      <ul>
+        <li><button type="button" class="btn_modal btn_myPage">마이페이지</button></li>
+        <li><button type="button" class="btn_modal btn_logout">로그아웃</button></li>
+      </ul>
+    </section>
   </header>
   <main>
     <h2 class="txt_bag">장바구니</h2>
@@ -175,5 +181,6 @@
       </div>
     </div>
   </footer>
+  <script src="../JavaScript/header.js"></script>
 </body>
 </html>

@@ -48,9 +48,9 @@ async function login() {
   // console.log(document.cookie);
   
   if (res.statusText == 'OK') {
-    localStorage.setItem('Authorization', json.token);
-    localStorage.setItem('id', json.id);
-    location.href = "index.html";
+    sessionStorage.setItem('Authorization', json.token);
+    sessionStorage.setItem('id', json.id);
+    history.back();
   } else if (res.statusText == 'Bad Request' && id.value == '') {
     err.classList.add('on');
     err.innerHTML = '아이디를 입력해주세요.';
