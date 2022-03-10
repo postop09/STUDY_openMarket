@@ -15,7 +15,7 @@ async function products() {
   });
   const json = await res.json();
   const secOrder = main.querySelector('.wrap_order');
-  console.log(json);
+  // console.log(json);
 
   secOrder.innerHTML = `
     <img src="${json.image}" alt="" class="img_product">
