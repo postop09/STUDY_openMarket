@@ -1,6 +1,6 @@
 // API
 async function product() {
-  const url = 'http://13.209.150.154:8000';
+  const url = 'https://openmarket.weniv.co.kr';
   const res = await fetch(url + '/products/', {
     method : 'GET',
     headers : {

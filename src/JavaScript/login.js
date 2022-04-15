@@ -29,7 +29,7 @@ async function login() {
   const id = main.querySelector('#inp_customerId');
   const pw = main.querySelector('#inp_customerPw');
   const err = main.querySelector('.txt_err');
-  const url = 'http://13.209.150.154:8000';
+  const url = 'https://openmarket.weniv.co.kr';
   const loginData = {
 		'username': id.value,
 		'password': pw.value,

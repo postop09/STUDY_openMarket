@@ -20,7 +20,7 @@ btnLogin.addEventListener('click', (e) => {
 
 // 로그아웃
 async function logout() {
-  const url = 'http://13.209.150.154:8000';
+  const url = 'https://openmarket.weniv.co.kr';
   const res = await fetch(url + '/accounts/logout/', {
     method : 'GET',
     headers : {

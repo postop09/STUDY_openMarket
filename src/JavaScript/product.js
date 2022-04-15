@@ -3,7 +3,7 @@ const secModal = main.querySelectorAll('.sec_modal');
 
 // API
 async function products() {
-  const url = 'http://13.209.150.154:8000';
+  const url = 'https://openmarket.weniv.co.kr';
   // products/${product_id}/를 저장해서 불러와야 된다.
   const productId = localStorage.getItem('productId');
   // console.log(productId);
