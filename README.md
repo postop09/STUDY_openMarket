@@ -8,7 +8,7 @@
 - 서버 API를 사용하여 기능을 구현
 
 ## 🟢빌드 및 실행방법
-작동 페이지: 
+작동 페이지: https://postop09.github.io/openMarket/src/pages/login.html
 - id : buyer1 / pw : hodu0910
 
 ## 🟢개발 환경
